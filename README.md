@@ -109,7 +109,7 @@ You should aim to **keep your API as flat as possible** and not crowd your resou
 
 
 
-### Use the authorization context to Filter
+### Use the Authorization context to Filter
 
 When it comes to providing an endpoint to access to all of a user's own resources (e.g. all my own posts) you may end up with many ways to serve that information; it's up to you what best suits your application.
 
@@ -121,7 +121,7 @@ When it comes to providing an endpoint to access to all of a user's own resource
 
 ### Use a "Me" Endpoint
 
-As hinted above, implement a `GET /me` endpoint to deliver basic data about the user as distinguished through the `authorization` header. This can include info about the user's permissions/scopes/groups/posts/sessions etc. that allow the client to show/hide elements and routes based on your permissions.
+As hinted above, implement a `GET /me` endpoint to deliver basic data about the user as distinguished through the `Authorization` header. This can include info about the user's permissions/scopes/groups/posts/sessions etc. that allow the client to show/hide elements and routes based on your permissions.
 
 When it comes to providing endpoints for updating user preferences allow `PATCH /me` to change those intrinsic values.
 
